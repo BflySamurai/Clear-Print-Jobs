@@ -1,5 +1,3 @@
-; This application must be run as Administrator or else it won't be able to stop the Print Spooler service.
-
 ; If you're having trouble with print jobs getting stuck, this script might help. It stops the print spool service, then it deletes the print job files, then it starts the print spool service.
 
 ; If you strip away the error handling code, this is all the script does:
@@ -16,6 +14,7 @@
 
 ;-----------------------------------------
 
+; This application must be run as Administrator or else it won't be able to stop the Print Spooler service.
 if not A_IsAdmin { ; Ensure the program is run as admin
     Run *RunAs "%A_ScriptFullPath%"
     ExitApp
