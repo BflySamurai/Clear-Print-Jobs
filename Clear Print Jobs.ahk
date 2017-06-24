@@ -21,7 +21,7 @@ if not A_IsAdmin { ; Ensure the program is run as admin
 }
 
 ;;;;; INIT VARIABLES (edit these if you're getting errors)
-dir = C:\Windows\System32\spool\PRINTERS ; The directory where the print job files are stored
+dir = %A_WinDir%\System32\spool\PRINTERS ; The directory where the print job files are stored
 StopCommand = net stop Spooler  ; Command to stop the Print Spooler service (change "Spooler" if you are getting errors)
 StartCommand = net start Spooler  ; Command to start the Print Spooler service (change "Spooler" if you are getting errors)
 
