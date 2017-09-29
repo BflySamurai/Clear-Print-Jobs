@@ -16,7 +16,7 @@ Options for running:
 -
 
 1. Download and run [Clear Print Jobs.exe](https://github.com/BflySamurai/Clear-Print-Jobs/raw/master/Clear%20Print%20Jobs.exe).
-2. If you have AutoHotkey installed, either run **Clear_Print_Jobs.ahk** or compile it into your own EXE file if you don't want to trust the EXE in this repository. To download the sccript, copy [the AHK script](thehttps://github.com/BflySamurai/Clear-Print-Jobs/blob/master/Clear%20Print%20Jobs.ahk) and paste the code into your own file or [download the whole repository](https://github.com/BflySamurai/Clear-Print-Jobs/archive/master.zip).
+2. If you have AutoHotkey installed, either run **Clear_Print_Jobs.ahk** or compile it into your own EXE file if you don't want to trust the EXE in this repository. To download the script, copy [the AHK script](thehttps://github.com/BflySamurai/Clear-Print-Jobs/blob/master/Clear%20Print%20Jobs.ahk) and paste the code into your own file or [download the whole repository](https://github.com/BflySamurai/Clear-Print-Jobs/archive/master.zip).
 
 ---
 
