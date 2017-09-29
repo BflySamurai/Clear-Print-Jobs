@@ -16,8 +16,12 @@
 
 ; This application must be run as Administrator or else it won't be able to stop the Print Spooler service.
 if not A_IsAdmin { ; Ensure the program is run as admin
-    Run *RunAs "%A_ScriptFullPath%"
-    ExitApp
+    Run *RunAs "%A_ScriptFullPath%", , UseErrorLevel
+	if ErrorLevel { ; If it returns an error (if the user doesn't allow the script to be run with admin permissions)
+		MsgBox, This script needs admin permissions to run. The script will now terminate without clearing the print jobs.
+		ExitApp
+		}
+    ExitApp ; Exit this version of the script because we have now launched a version of this script with admin permissions
 }
 
 ;;;;; INIT VARIABLES (edit these if you're getting errors)
@@ -78,5 +82,5 @@ if ErrorSpoolerStop  or ErrorDirectory or ErrorSpoolerStart {
 	}
 	MsgBox % error_message
 } else {
-	MsgBox, "Print jobs sucessfully cleared. Try printing now."
+	MsgBox, Print jobs sucessfully cleared. Try printing now.
 }
